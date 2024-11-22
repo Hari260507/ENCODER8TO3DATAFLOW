@@ -39,18 +39,29 @@ Figure 02  Encoder 8 * 3
 /* write all the steps invloved */
 
 **PROGRAM**
-
+```
+module experiment5(din,a,b,c);
+input [0:7] din;
+output a,b,c;
+assign a=(din[4]| din[5]| din[6 ]| din[7]);
+assign b=(din[2]| din[3]| din[6]| din[7]);
+assign c=(din[1]| din[3]| din[5 ]| din[7]);
+endmodule
+```
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
 Developed by: RegisterNumber:
 */
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+![exp 5](https://github.com/user-attachments/assets/4798e795-4503-4036-a108-39968c33c042)
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+![experiment 5](https://github.com/user-attachments/assets/c2401c17-595c-42b5-abf1-9775b877c5c1)
 
 **RESULTS**
-
+Thus verified truth table of the designed half adder and half subtractor circuit in
+Quartus using Verilog programming.
 
 
 
